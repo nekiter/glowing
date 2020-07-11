@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/skyline-b.png-128b62e71e3af6d8cc81c66dc885481c.stex"
+path="res://.import/banner-scroll-4.png-c146e815501cf6e2bceda62abe4d46ea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/skyline-b.png"
-dest_files=[ "res://.import/skyline-b.png-128b62e71e3af6d8cc81c66dc885481c.stex" ]
+source_file="res://assets/background/banner-scroll/banner-scroll-4.png"
+dest_files=[ "res://.import/banner-scroll-4.png-c146e815501cf6e2bceda62abe4d46ea.stex" ]
 
 [params]
 

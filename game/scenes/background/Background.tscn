@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/background/NearBuildings/NearBuildings.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/background/Sunset/Sunset.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/background/MediumBuildings/MediumBuildings.tscn" type="PackedScene" id=8]
+
+[node name="Background" type="Node2D"]
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Sunset" parent="." instance=ExtResource( 7 )]
+
+[node name="MediumBuildings" parent="." instance=ExtResource( 8 )]
+
+[node name="MediumBuildings2" parent="." instance=ExtResource( 8 )]
+position = Vector2( -185.428, 53.8782 )
+
+[node name="MediumBuildings3" parent="." instance=ExtResource( 8 )]
+position = Vector2( -244.697, 101.022 )
+
+[node name="NearBuildings" parent="." instance=ExtResource( 1 )]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
