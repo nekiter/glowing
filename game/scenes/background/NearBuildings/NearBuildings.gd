@@ -21,5 +21,5 @@ func _on_Timer_timeout():
 	add_child_below_node(self,tmp)
 	
 	#Randomizing next wait time
-	$Timer.set_wait_time(rng.randf_range(0.5,1.2))
+	$Timer.set_wait_time(rng.randf_range(0.5,0.9))
 	

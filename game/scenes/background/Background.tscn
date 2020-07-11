@@ -19,5 +19,12 @@ position = Vector2( -185.428, 53.8782 )
 [node name="MediumBuildings3" parent="." instance=ExtResource( 8 )]
 position = Vector2( -244.697, 101.022 )
 
+[node name="MediumBuildings4" parent="." instance=ExtResource( 8 )]
+position = Vector2( -304.405, 161.454 )
+
+[node name="MediumBuildings5" parent="." instance=ExtResource( 8 )]
+position = Vector2( -82.4078, 220.315 )
+
 [node name="NearBuildings" parent="." instance=ExtResource( 1 )]
+position = Vector2( -16, 210 )
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

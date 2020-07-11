@@ -14,10 +14,10 @@ position = Vector2( 874.32, 308.47 )
 script = ExtResource( 8 )
 
 [node name="Building" type="TextureRect" parent="."]
-margin_left = 599.0
-margin_top = -124.0
-margin_right = 852.0
-margin_bottom = 180.0
+margin_left = 616.0
+margin_top = -133.0
+margin_right = 869.0
+margin_bottom = 171.0
 texture = ExtResource( 1 )
 expand = true
 __meta__ = {
@@ -25,6 +25,6 @@ __meta__ = {
 }
 
 [node name="Banners" type="Node2D" parent="."]
-position = Vector2( 795.808, 20.0361 )
+position = Vector2( 812.808, 11.0361 )
 script = ExtResource( 2 )
 scenes = [ ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 3 ) ]

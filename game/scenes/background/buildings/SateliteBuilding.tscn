@@ -10,14 +10,14 @@
 [ext_resource path="res://scenes/background/buildings/BuildMove.gd" type="Script" id=8]
 
 [node name="SateliteBuilding" type="Node2D"]
-position = Vector2( 1791.3, 384.978 )
+position = Vector2( 1661.3, 384.978 )
 script = ExtResource( 8 )
 
 [node name="Building" type="TextureRect" parent="."]
 margin_left = -159.405
-margin_top = -247.998
+margin_top = -249.68
 margin_right = 17.595
-margin_bottom = 37.0023
+margin_bottom = 35.3205
 texture = ExtResource( 1 )
 expand = true
 __meta__ = {

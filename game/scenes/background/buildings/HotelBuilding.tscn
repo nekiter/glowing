@@ -10,7 +10,7 @@
 [ext_resource path="res://scenes/background/buildings/BuildMove.gd" type="Script" id=8]
 
 [node name="HotelBuilding" type="Node2D"]
-position = Vector2( 1658.99, 386.563 )
+position = Vector2( 1592.99, 386.563 )
 script = ExtResource( 8 )
 
 [node name="Building" type="TextureRect" parent="."]

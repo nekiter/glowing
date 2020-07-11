@@ -10,7 +10,7 @@
 [ext_resource path="res://scenes/background/buildings/BuildMove.gd" type="Script" id=8]
 
 [node name="TvBuilding" type="Node2D"]
-position = Vector2( 1568.72, 389.494 )
+position = Vector2( 1568.72, 402.494 )
 script = ExtResource( 8 )
 
 [node name="Building" type="TextureRect" parent="."]
