@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://assets/background.jpeg" type="Texture" id=1]
+[ext_resource path="res://assets/background/buildings-bg-custom.png" type="Texture" id=1]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -16,16 +16,17 @@ void fragment() {
 custom_defines = ""
 
 [sub_resource type="ShaderMaterial" id=2]
-resource_local_to_scene = true
 shader = SubResource( 1 )
-shader_param/scroll_speed = 0.2
+shader_param/scroll_speed = 0.6
 
-[node name="Background" type="Node2D"]
+[node name="MediumBuildings" type="Node2D"]
 
-[node name="sprite" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 material = SubResource( 2 )
-margin_right = 1026.0
-margin_bottom = 598.0
+margin_left = 0.0419922
+margin_top = 147.571
+margin_right = 3573.04
+margin_bottom = 272.571
 texture = ExtResource( 1 )
 stretch_mode = 2
 __meta__ = {
