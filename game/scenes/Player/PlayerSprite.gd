@@ -1,4 +1,4 @@
-extends Node2D
+extends "../../../scripts/ShapeDrawing.gd"
 
 var shapesArray = ["triangle", "circle", "square"]
 export(Array, Color) var colorsArray = [Color(1.0, 0.0, 0.0), Color(0, 1.0, 0.0), Color(0.0, 0.0, 1.0)]
@@ -6,6 +6,11 @@ export(int) var currentShape = 2
 export(int) var currentColor = 0
 export(int) var width = 50
 export(Vector2) var centerPosition = Vector2(200, 200)
+
+var red = Color(1.0, 0.0, 0.0)
+var blue = Color(0, 0.0, 1.0)
+var green = Color(0.0, 1.0, 0.0)
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -13,7 +18,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-
 	if Input.is_action_just_pressed("ui_right"):
 		currentShape += 1
 		
@@ -38,83 +42,31 @@ func _process(delta):
 	update()
 
 func _draw():	
-	
+	var spriteControl = get_node("AnimatedSprite")
+
 	if(shapesArray[currentShape] == "triangle"):
-		draw_triangle(centerPosition, width, colorsArray[currentColor])
+		if colorsArray[currentColor] == blue:
+			spriteControl.set_animation("running-triangle-blue")
+		elif colorsArray[currentColor] == red:
+			spriteControl.set_animation("running-triangle-red")
+		else:
+			spriteControl.set_animation("running-triangle-green")
+		# draw_triangle(centerPosition, width, colorsArray[currentColor])
 	elif(shapesArray[currentShape] == "circle"):
-		var angle_from = 0
-		var angle_to = 360
-		draw_circle_arc(centerPosition, width/2, angle_from, angle_to, colorsArray[currentColor])
+		if colorsArray[currentColor] == blue:
+			spriteControl.set_animation("running-circle-blue")
+		elif colorsArray[currentColor] == red:
+			spriteControl.set_animation("running-circle-red")
+		else:
+			spriteControl.set_animation("running-circle-green")
+		# var angle_from = 0
+		# var angle_to = 360
+		# draw_circle_arc(centerPosition, width/2, angle_from, angle_to, colorsArray[currentColor])
 	else:
-		draw_square(centerPosition, width, colorsArray[currentColor])
-	
-	
-func draw_square(center, width, color):
-	var points_arc = PoolVector2Array()
-
-	points_arc.push_back(Vector2(center.x - width/2, center.y - width/2))
-	points_arc.push_back(Vector2(center.x + width/2, center.y - width/2))
-	points_arc.push_back(Vector2(center.x + width/2, center.y + width/2))
-	points_arc.push_back(Vector2(center.x - width/2, center.y + width/2))
-
-	for index_point in range(points_arc.size()-1):
-		draw_line(points_arc[index_point], points_arc[index_point + 1], color)
-
-	draw_line(points_arc[points_arc.size()-1], points_arc[0], color)
-
-func draw_square_poly(center, width, color):
-	var points_arc = PoolVector2Array()
-
-	points_arc.push_back(Vector2(center.x - width/2, center.y - width/2))
-	points_arc.push_back(Vector2(center.x + width/2, center.y - width/2))
-	points_arc.push_back(Vector2(center.x + width/2, center.y + width/2))
-	points_arc.push_back(Vector2(center.x - width/2, center.y + width/2))
-
-	var colors = PoolColorArray([color])
-	draw_polygon(points_arc, colors)
-
-func draw_triangle(center, width, color):
-	var points_arc = PoolVector2Array()
-
-	points_arc.push_back(Vector2(center.x - width/2, center.y + width/2))
-	points_arc.push_back(Vector2(center.x + width/2, center.y + width/2))
-	points_arc.push_back(Vector2(center.x, center.y - cos(deg2rad(60))*width/2))
-
-	for index_point in range(points_arc.size()-1):
-		draw_line(points_arc[index_point], points_arc[index_point + 1], color)
-
-	draw_line(points_arc[points_arc.size()-1], points_arc[0], color)
-
-func draw_triangle_poly(center, width, color):
-	var points_arc = PoolVector2Array()
-
-	points_arc.push_back(Vector2(center.x - width/2, center.y - width/2))
-	points_arc.push_back(Vector2(center.x + width/2, center.y - width/2))
-	points_arc.push_back(Vector2(center.x, center.y + cos(deg2rad(60))*width/2))
-
-	var colors = PoolColorArray([color])
-	draw_polygon(points_arc, colors)
-	
-
-func draw_circle_arc(center, radius, angle_from, angle_to, color):
-	var nb_points = 32
-	var points_arc = PoolVector2Array()
-
-	for i in range(nb_points + 1):
-		var angle_point = deg2rad(angle_from + i * (angle_to-angle_from) / nb_points - 90)
-		points_arc.push_back(center + Vector2(cos(angle_point), sin(angle_point)) * radius)
-
-	for index_point in range(nb_points):
-		draw_line(points_arc[index_point], points_arc[index_point + 1], color)
-
-func draw_circle_arc_poly(center, radius, angle_from, angle_to, color):
-	var nb_points = 32
-	var points_arc = PoolVector2Array()
-	points_arc.push_back(center)
-	var colors = PoolColorArray([color])
-
-	for i in range(nb_points + 1):
-		var angle_point = deg2rad(angle_from + i * (angle_to - angle_from) / nb_points - 90)
-		points_arc.push_back(center + Vector2(cos(angle_point), sin(angle_point)) * radius)
-	draw_polygon(points_arc, colors)
-		
+		if colorsArray[currentColor] == blue:
+			spriteControl.set_animation("running-square-blue")
+		elif colorsArray[currentColor] == red:
+			spriteControl.set_animation("running-square-red")
+		else:
+			spriteControl.set_animation("running-square-green")
+		# draw_square(centerPosition, width, colorsArray[currentColor])

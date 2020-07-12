@@ -1,7 +1,154 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=81 format=2]
 
 [ext_resource path="res://scenes/Player/PlayerSprite.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/6b.png" type="Texture" id=2]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/5b.png" type="Texture" id=3]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/7b.png" type="Texture" id=4]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/8b.png" type="Texture" id=5]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/11b.png" type="Texture" id=6]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/13b.png" type="Texture" id=7]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/4b.png" type="Texture" id=8]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/3b.png" type="Texture" id=9]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/14b.png" type="Texture" id=10]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/12b.png" type="Texture" id=11]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/10b.png" type="Texture" id=12]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/15b.png" type="Texture" id=13]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/16b.png" type="Texture" id=14]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/2b.png" type="Texture" id=15]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/9b.png" type="Texture" id=16]
+[ext_resource path="res://scenes/Player/sprites/square/blue/running/1b.png" type="Texture" id=17]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/3g.png" type="Texture" id=18]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/6r.png" type="Texture" id=19]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/14g.png" type="Texture" id=20]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/13g.png" type="Texture" id=21]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/10r.png" type="Texture" id=22]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/12g.png" type="Texture" id=23]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/1g.png" type="Texture" id=24]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/11g.png" type="Texture" id=25]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/2r.png" type="Texture" id=26]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/11r.png" type="Texture" id=27]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/9r.png" type="Texture" id=28]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/15g.png" type="Texture" id=29]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/12r.png" type="Texture" id=30]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/16g.png" type="Texture" id=31]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/2g.png" type="Texture" id=32]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/4r.png" type="Texture" id=33]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/8r.png" type="Texture" id=34]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/3r.png" type="Texture" id=35]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/9g.png" type="Texture" id=36]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/13r.png" type="Texture" id=37]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/14r.png" type="Texture" id=38]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/6g.png" type="Texture" id=39]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/5r.png" type="Texture" id=40]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/5g.png" type="Texture" id=41]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/16r.png" type="Texture" id=42]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/15r.png" type="Texture" id=43]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/10g.png" type="Texture" id=44]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/8g.png" type="Texture" id=45]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/4g.png" type="Texture" id=46]
+[ext_resource path="res://scenes/Player/sprites/square/green/running/7g.png" type="Texture" id=47]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/1r.png" type="Texture" id=48]
+[ext_resource path="res://scenes/Player/sprites/square/red/running/7r.png" type="Texture" id=49]
+[ext_resource path="res://scenes/Player/sprites/triangle/blue/running/2.png" type="Texture" id=50]
+[ext_resource path="res://scenes/Player/sprites/triangle/red/running/3.png" type="Texture" id=51]
+[ext_resource path="res://scenes/Player/sprites/triangle/red/running/2.png" type="Texture" id=52]
+[ext_resource path="res://scenes/Player/sprites/triangle/red/running/1.png" type="Texture" id=53]
+[ext_resource path="res://scenes/Player/sprites/triangle/blue/running/3.png" type="Texture" id=54]
+[ext_resource path="res://scenes/Player/sprites/triangle/blue/running/4.png" type="Texture" id=55]
+[ext_resource path="res://scenes/Player/sprites/triangle/blue/running/1.png" type="Texture" id=56]
+[ext_resource path="res://scenes/Player/sprites/triangle/green/running/2.png" type="Texture" id=57]
+[ext_resource path="res://scenes/Player/sprites/triangle/green/running/1.png" type="Texture" id=58]
+[ext_resource path="res://scenes/Player/sprites/triangle/green/running/3.png" type="Texture" id=59]
+[ext_resource path="res://scenes/Player/sprites/triangle/green/running/4.png" type="Texture" id=60]
+[ext_resource path="res://scenes/Player/sprites/triangle/red/running/4.png" type="Texture" id=61]
+[ext_resource path="res://scenes/Player/sprites/circle/blue/collision/1.png" type="Texture" id=62]
+[ext_resource path="res://scenes/Player/sprites/circle/blue/collision/3.png" type="Texture" id=63]
+[ext_resource path="res://scenes/Player/sprites/circle/green/running/3.png" type="Texture" id=64]
+[ext_resource path="res://scenes/Player/sprites/circle/blue/collision/2.png" type="Texture" id=65]
+[ext_resource path="res://scenes/Player/sprites/circle/red/running/3.png" type="Texture" id=66]
+[ext_resource path="res://scenes/Player/sprites/circle/red/collision/1.png" type="Texture" id=67]
+[ext_resource path="res://scenes/Player/sprites/circle/red/running/2.png" type="Texture" id=68]
+[ext_resource path="res://scenes/Player/sprites/circle/red/collision/2.png" type="Texture" id=69]
+[ext_resource path="res://scenes/Player/sprites/circle/red/running/1.png" type="Texture" id=70]
+[ext_resource path="res://scenes/Player/sprites/circle/green/running/2.png" type="Texture" id=71]
+[ext_resource path="res://scenes/Player/sprites/circle/green/running/1.png" type="Texture" id=72]
+[ext_resource path="res://scenes/Player/sprites/circle/red/collision/3.png" type="Texture" id=73]
+[ext_resource path="res://scenes/Player/sprites/circle/blue/running/3.png" type="Texture" id=74]
+[ext_resource path="res://scenes/Player/sprites/circle/green/collision/2.png" type="Texture" id=75]
+[ext_resource path="res://scenes/Player/sprites/circle/green/collision/3.png" type="Texture" id=76]
+[ext_resource path="res://scenes/Player/sprites/circle/green/collision/1.png" type="Texture" id=77]
+[ext_resource path="res://scenes/Player/sprites/circle/blue/running/1.png" type="Texture" id=78]
+[ext_resource path="res://scenes/Player/sprites/circle/blue/running/2.png" type="Texture" id=79]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 17 ), ExtResource( 15 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 16 ), ExtResource( 12 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "running-square-blue",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 62 ), ExtResource( 65 ), ExtResource( 63 ) ],
+"loop": true,
+"name": "collision-circle-blue",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 77 ), ExtResource( 75 ), ExtResource( 76 ) ],
+"loop": true,
+"name": "collision-circle-green",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 72 ), ExtResource( 71 ), ExtResource( 64 ) ],
+"loop": true,
+"name": "running-circle-green",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 70 ), ExtResource( 68 ), ExtResource( 66 ) ],
+"loop": true,
+"name": "running-circle-red",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 56 ), ExtResource( 50 ), ExtResource( 54 ), ExtResource( 55 ) ],
+"loop": true,
+"name": "running-triangle-blue",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 67 ), ExtResource( 69 ), ExtResource( 73 ) ],
+"loop": true,
+"name": "collision-circle-red",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 78 ), ExtResource( 79 ), ExtResource( 74 ) ],
+"loop": true,
+"name": "running-circle-blue",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 52 ), ExtResource( 51 ), ExtResource( 61 ) ],
+"loop": true,
+"name": "running-triangle-red",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 48 ), ExtResource( 26 ), ExtResource( 35 ), ExtResource( 33 ), ExtResource( 40 ), ExtResource( 19 ), ExtResource( 49 ), ExtResource( 34 ), ExtResource( 28 ), ExtResource( 22 ), ExtResource( 27 ), ExtResource( 30 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 43 ), ExtResource( 42 ) ],
+"loop": true,
+"name": "running-square-red",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 32 ), ExtResource( 18 ), ExtResource( 46 ), ExtResource( 41 ), ExtResource( 39 ), ExtResource( 47 ), ExtResource( 45 ), ExtResource( 36 ), ExtResource( 44 ), ExtResource( 25 ), ExtResource( 23 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 29 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "running-square-green",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 58 ), ExtResource( 57 ), ExtResource( 59 ), ExtResource( 60 ) ],
+"loop": true,
+"name": "running-triangle-green",
+"speed": 10.0
+} ]
 
 [node name="PlayerSprite" type="Node2D"]
 script = ExtResource( 1 )
-centerPosition = Vector2( 0, 0 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.327778, 0.327778 )
+frames = SubResource( 1 )
+animation = "running-square-green"
+frame = 5
+playing = true

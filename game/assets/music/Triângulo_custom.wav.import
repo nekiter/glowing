@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Triângulo_custom.wav-715f044b2ae049718799671c6bbeee67.sample"
+
+[deps]
+
+source_file="res://assets/music/Triângulo_custom.wav"
+dest_files=[ "res://.import/Triângulo_custom.wav-715f044b2ae049718799671c6bbeee67.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
