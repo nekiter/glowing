@@ -42,7 +42,7 @@ func _process(delta):
 	update()
 
 func _draw():	
-	var spriteControl = get_node("AnimatedSprite")
+	var spriteControl = get_node("Player/AnimatedSprite")
 
 	if(shapesArray[currentShape] == "triangle"):
 		if colorsArray[currentColor] == blue:
