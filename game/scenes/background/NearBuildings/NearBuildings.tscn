@@ -1,0 +1,16 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/background/NearBuildings/NearBuildings.gd" type="Script" id=1]
+[ext_resource path="res://scenes/background/buildings/PinkBuilding.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/background/buildings/SateliteBuilding.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/background/buildings/TvBuilding.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/background/buildings/BlueBuilding.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/background/buildings/HotelBuilding.tscn" type="PackedScene" id=6]
+
+[node name="NearBuildings" type="Node2D"]
+script = ExtResource( 1 )
+buildings = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ]
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

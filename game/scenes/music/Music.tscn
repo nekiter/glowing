@@ -1,0 +1,45 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/music/DrumBase_custom.wav" type="AudioStream" id=2]
+[ext_resource path="res://assets/music/Círculo_custom.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/music/Azul_custom.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/music/Quadrado_custom.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/music/Base_custom.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/music/Vermelho_custom.wav" type="AudioStream" id=7]
+[ext_resource path="res://assets/music/Verde_custom.wav" type="AudioStream" id=8]
+[ext_resource path="res://scenes/music/Music.gd" type="Script" id=9]
+
+[node name="Music" type="Node2D"]
+script = ExtResource( 9 )
+transition_out_duration = 5.0
+transition_in_duration = 2.0
+
+[node name="Base" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true
+
+[node name="DrumBase" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="Square" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="Triangle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="Circle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Red" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="Green" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="Blue" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="FadeIn" type="Tween" parent="."]
+[connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]

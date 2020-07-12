@@ -1,0 +1,30 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/background/buildings/building3.png" type="Texture" id=1]
+[ext_resource path="res://scenes/background/buildings/Banners.gd" type="Script" id=2]
+[ext_resource path="res://scenes/background/boards/SushiBanner.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/background/boards/CokeBanner.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/background/boards/GreenBanner.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/background/boards/BlueBanner.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/background/boards/PinkBanner.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/background/buildings/BuildMove.gd" type="Script" id=8]
+
+[node name="SateliteBuilding" type="Node2D"]
+position = Vector2( 1661.3, 384.978 )
+script = ExtResource( 8 )
+
+[node name="Building" type="TextureRect" parent="."]
+margin_left = -159.405
+margin_top = -249.68
+margin_right = 17.595
+margin_bottom = 35.3205
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Banners" type="Node2D" parent="."]
+position = Vector2( -57.3004, -177.927 )
+script = ExtResource( 2 )
+scenes = [ ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 3 ) ]

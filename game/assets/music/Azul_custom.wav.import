@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Azul_custom.wav-75f6d4341becb40d9044fe6c05054a15.sample"
+
+[deps]
+
+source_file="res://assets/music/Azul_custom.wav"
+dest_files=[ "res://.import/Azul_custom.wav-75f6d4341becb40d9044fe6c05054a15.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
