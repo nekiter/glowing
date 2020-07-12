@@ -1,14 +1,14 @@
-extends KinematicBody2D
+extends RigidBody2D
+
 
 var velocity = Vector2.ZERO
 var current_frame = 0
-
-export var gravity_scale = 1
-export var jump_velocity = 20
+export var jump_force = 20
 
 onready var player = get_node("/root/Game/PlayerSprite")
 onready var spriteControl = get_node("AnimatedSprite")
 
+var forceApplied = false
 # var origin_position = player.get_position()
 
 # Called when the node enters the scene tree for the first time.
@@ -22,16 +22,10 @@ func _process(delta):
 
 	if (player.shapesArray[player.currentShape] == "square"):
 		# print(spriteControl.frame)
-		if (spriteControl.frame == 7):
-			velocity.y -= jump_velocity
+		if spriteControl.frame == 7 and !forceApplied:
+			forceApplied = true
+			apply_central_impulse(Vector2(0,-jump_force))
+		else:
+			forceApplied = false
 
-	if (player.shapesArray[player.currentShape] == "circle"):
-		velocity = Vector2.ZERO
-
-	if (player.shapesArray[player.currentShape] == "triangle"):
-		velocity = Vector2.ZERO
-
-func _physics_process(delta):
-	velocity.y += gravity_scale
-	move_and_collide(velocity*delta)
 

@@ -42,7 +42,7 @@ func _process(delta):
 	update()
 
 func _draw():	
-	var spriteControl = get_node("Player/AnimatedSprite")
+	var spriteControl = get_node("RigidBody2D/AnimatedSprite")
 
 	if(shapesArray[currentShape] == "triangle"):
 		if colorsArray[currentColor] == blue:
@@ -70,3 +70,7 @@ func _draw():
 		else:
 			spriteControl.set_animation("running-square-green")
 		# draw_square(centerPosition, width, colorsArray[currentColor])
+
+
+func _on_RigidBody2D_body_entered(body):
+	pass # Replace with function body.
