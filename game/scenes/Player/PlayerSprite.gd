@@ -7,6 +7,10 @@ export(int) var currentColor = 0
 export(int) var width = 50
 export(Vector2) var centerPosition = Vector2(200, 200)
 
+var red = Color(1.0, 0.0, 0.0)
+var blue = Color(0, 0.0, 1.0)
+var green = Color(0.0, 1.0, 0.0)
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -38,14 +42,31 @@ func _process(delta):
 	update()
 
 func _draw():	
-	if(shapesArray[currentShape] == "triangle"):
-		draw_triangle(centerPosition, width, colorsArray[currentColor])
-	elif(shapesArray[currentShape] == "circle"):
-		var angle_from = 0
-		var angle_to = 360
-		draw_circle_arc(centerPosition, width/2, angle_from, angle_to, colorsArray[currentColor])
-	else:
-		draw_square(centerPosition, width, colorsArray[currentColor])
-	
-	
+	var spriteControl = get_node("AnimatedSprite")
 
+	if(shapesArray[currentShape] == "triangle"):
+		if colorsArray[currentColor] == blue:
+			spriteControl.set_animation("running-triangle-blue")
+		elif colorsArray[currentColor] == red:
+			spriteControl.set_animation("running-triangle-red")
+		else:
+			spriteControl.set_animation("running-triangle-green")
+		# draw_triangle(centerPosition, width, colorsArray[currentColor])
+	elif(shapesArray[currentShape] == "circle"):
+		if colorsArray[currentColor] == blue:
+			spriteControl.set_animation("running-circle-blue")
+		elif colorsArray[currentColor] == red:
+			spriteControl.set_animation("running-circle-red")
+		else:
+			spriteControl.set_animation("running-circle-green")
+		# var angle_from = 0
+		# var angle_to = 360
+		# draw_circle_arc(centerPosition, width/2, angle_from, angle_to, colorsArray[currentColor])
+	else:
+		if colorsArray[currentColor] == blue:
+			spriteControl.set_animation("running-square-blue")
+		elif colorsArray[currentColor] == red:
+			spriteControl.set_animation("running-square-red")
+		else:
+			spriteControl.set_animation("running-square-green")
+		# draw_square(centerPosition, width, colorsArray[currentColor])
