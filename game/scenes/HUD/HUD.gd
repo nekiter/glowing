@@ -1,7 +1,7 @@
 extends "../../scripts/ShapeDrawing.gd"
 
 var shapesArray = ["triangle", "circle", "square"]
-export(Array, Color) var colorsArray = [Color(1.0, 0.0, 0.0), Color(0, 1.0, 0.0), Color(0.0, 0.0, 1.0)]
+var colorsArray = [Color(1.0, 0.0, 0.0), Color(0, 1.0, 0.0), Color(0.0, 0.0, 1.0)]
 export(int) var currentShape = 2
 export(int) var currentColor = 0
 export(int) var width = 35

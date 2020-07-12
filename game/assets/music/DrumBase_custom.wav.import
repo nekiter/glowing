@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/DrumBase_custom.wav-4ded18c55af2d2f2930e736560702451.sample"
+
+[deps]
+
+source_file="res://assets/music/DrumBase_custom.wav"
+dest_files=[ "res://.import/DrumBase_custom.wav-4ded18c55af2d2f2930e736560702451.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
