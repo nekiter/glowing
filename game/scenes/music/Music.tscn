@@ -1,21 +1,21 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://assets/music/Base.wav" type="AudioStream" id=1]
-[ext_resource path="res://assets/music/DrumBase.wav" type="AudioStream" id=2]
+[ext_resource path="res://assets/music/DrumBase_custom.wav" type="AudioStream" id=2]
 [ext_resource path="res://assets/music/Círculo_custom.wav" type="AudioStream" id=3]
 [ext_resource path="res://assets/music/Azul_custom.wav" type="AudioStream" id=4]
-[ext_resource path="res://assets/music/Quadrado.wav" type="AudioStream" id=5]
-[ext_resource path="res://assets/music/Triângulo.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/music/Quadrado_custom.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/music/Base_custom.wav" type="AudioStream" id=6]
 [ext_resource path="res://assets/music/Vermelho_custom.wav" type="AudioStream" id=7]
 [ext_resource path="res://assets/music/Verde_custom.wav" type="AudioStream" id=8]
 [ext_resource path="res://scenes/music/Music.gd" type="Script" id=9]
 
 [node name="Music" type="Node2D"]
 script = ExtResource( 9 )
-transition_duration = 10.0
+transition_out_duration = 5.0
+transition_in_duration = 2.0
 
 [node name="Base" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 1 )
+stream = ExtResource( 6 )
 autoplay = true
 
 [node name="DrumBase" type="AudioStreamPlayer" parent="."]
